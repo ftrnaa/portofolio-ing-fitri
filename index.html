@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitri Nabila Aprianti — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursor-follower"></div>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <div class="loader-text">Fitri Nabila</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a class="nav-logo" href="#hero">
+    <span>FN</span>
+    <em>Aprianti</em>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#organisasi">Organisasi</a></li>
+    <li><a href="#kegiatan">Kegiatan</a></li>
+    <li><a href="#sertifikat">Sertifikat</a></li>
+  </ul>
+  <a href="mailto:fitrinabilaaprianti2006@gmail.com" class="nav-cta">Contact Me</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#organisasi">Organisasi</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span class="dot-blink"></span>
+      willing to do an internship
+    </div>
+
+    <h1 class="hero-name">
+      <span class="name-line" data-delay="0">Fitri</span>
+      <span class="name-line italic" data-delay="150">Nabila</span>
+      <span class="name-line" data-delay="300">Aprianti</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      Computer Science Student
+      <span class="divider-dot">·</span>
+      Web Developer
+    </p>
+
+    <div class="hero-ctas">
+      <a href="#projects" class="btn-primary">View projects </a>
+      <a href="#about" class="btn-secondary">About Me ↓</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <div class="scroll-track">
+      <div class="scroll-thumb"></div>
+    </div>
+  </div>
+
+  <div class="hero-badge">
+    <div class="badge-ring">
+      <svg viewBox="0 0 120 120" class="badge-svg">
+        <path id="circle-text" d="M 60,60 m -45,0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" fill="none"/>
+        <text font-size="11.5" fill="currentColor" letter-spacing="3">
+          <textPath href="#circle-text">POLITEKNIK NEGERI BATAM · 2024 · </textPath>
+        </text>
+      </svg>
+      <div class="badge-center">D3<br>TI</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <div class="section-label">
+        <span class="label-num">01</span>
+        About Me
+      </div>
+    </div>
+
+    <div class="about-layout">
+
+      <div class="about-photo-col reveal-left">
+        <div class="photo-container">
+          <div class="photo-bg-shape"></div>
+          <div class="photo-frame">
+            <img src="foto.jpeg" alt="Fitri Nabila Aprianti">
+          </div>
+          <div class="photo-caption">
+            <span class="caption-icon">📍</span>
+            <span>Batam, Indonesia</span>
+          </div>
+          <div class="photo-stat">
+            <div class="stat-item">
+              <div class="stat-num">3.89</div>
+              <div class="stat-label">GPA</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-num">3+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-num">'24</div>
+              <div class="stat-label">Batch</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text-col reveal-right">
+        <h2 class="about-title">
+          Hello, I'm <br>
+          <em>Fitri Nabila</em>
+        </h2>
+        <p class="about-body">
+          Computer Science Student who has an interest in web development and digital technology.
+          Familiar with building web-based applications using Laravel, PHP, JavaScript,CSS, Next.js, Express.js and MySQL.
+        </p>
+        <p class="about-body">
+          Has the ability to work well in a team, good communication skills, and a strong passion for learning
+          to continue growing in the world of technology and software development.
+        </p>
+
+        <div class="links-row">
+          <a href="https://github.com/ftrnaa" class="social-link" target="_blank">
+            <span class="social-icon">⟨/⟩</span> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/fitri-nabila-aprianti-0b2b5824a/" class="social-link" target="_blank">
+            <span class="social-icon">in</span> LinkedIn
+          </a>
+          <a href="mailto:fitrinabilaaprianti2006@gmail.com" class="social-link">
+            <span class="social-icon">@</span> Email
+          </a>
+          <a href="https://www.instagram.com/fttrnaaaa?igsh=MWE5d2FxbnplbHNoeA==" class="social-link" target="_blank">
+            <span class="social-icon">◎</span> Instagram
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <div class="section-label">
+        <span class="label-num">02</span>
+        Education
+      </div>
+      <h2 class="section-title">Education &amp;<br><em>Curriculum Vitae</em></h2>
+    </div>
+
+    <div class="edu-layout">
+
+      <div class="edu-timeline">
+
+        <div class="edu-card reveal" data-delay="0">
+          <div class="edu-card-year">2024 — Present</div>
+          <div class="edu-card-dot"><span></span></div>
+          <div class="edu-card-body">
+            <div class="edu-badge active">Active</div>
+            <div class="edu-school">Politeknik Negeri Batam</div>
+            <div class="edu-major">D3 Computer Science</div>
+            <div class="edu-gpa-chip">GPA <strong>3.89 / 4.0</strong></div>
+          </div>
+        </div>
+
+        <div class="edu-card reveal" data-delay="150">
+          <div class="edu-card-year">2021 — 2024</div>
+          <div class="edu-card-dot"><span></span></div>
+          <div class="edu-card-body">
+            <div class="edu-school">SMA Negeri 1 Jatiwangi</div>
+            <div class="edu-major">Science Major</div>
+            <div class="edu-gpa-chip">Grade <strong>89</strong></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cv-panel reveal" data-delay="200">
+        <div class="cv-qr-area">
+          <div class="qr-placeholder">
+            <div class="qr-inner">
+              <img src="assets/qr cv.png" alt="QR Code CV" class="qr-image">
+            </div>
+            <p>Scan QR Code<br>to view CV</p>
+          </div>
+        </div>
+        <div class="cv-info">
+          <div class="cv-title">Curriculum Vitae</div>
+          <p class="cv-desc">Download the complete CV for more detailed information about experience and skills.</p>
+          <a href="CV fitri-nabila-aprianti.pdf" download class="btn-download">
+            <span>↓</span> Download CV
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <div class="section-label light">
+        <span class="label-num">03</span>
+        Skills
+      </div>
+      <h2 class="section-title light">Skills &amp;<br><em>Expertise</em></h2>
+    </div>
+
+    <div class="skills-layout">
+
+      <!-- Hard Skills -->
+      <div class="skill-box reveal" data-delay="0">
+        <div class="skill-box-header">
+          <span class="skill-icon">⚙️</span>
+          <span>Hard Skills</span>
+        </div>
+        <div class="skill-cloud">
+          <span class="stag featured">PHP</span>
+          <span class="stag featured">Laravel</span>
+          <span class="stag">JavaScript</span>
+          <span class="stag">HTML</span>
+          <span class="stag">CSS</span>
+          <span class="stag">Next.js</span>
+          <span class="stag">Express.js</span>
+          <span class="stag featured">MySQL</span>
+          <span class="stag">MongoDB</span>
+          <span class="stag featured">PostgreSQL</span>
+          <span class="stag">REST API</span>
+          <span class="stag">CRUD Dev</span>
+          <span class="stag">Web Dev</span>
+          <span class="stag">Database Mgmt</span>
+          <span class="stag">UI/UX Design</span>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="skill-box reveal" data-delay="100">
+        <div class="skill-box-header">
+          <span class="skill-icon">🛠️</span>
+          <span>Tools</span>
+        </div>
+        <div class="skill-cloud">
+          <span class="stag featured">VS Code</span>
+          <span class="stag">XAMPP</span>
+          <span class="stag featured">GitHub</span>
+          <span class="stag featured">Figma</span>
+          <span class="stag featured">Canva</span>
+          <span class="stag">Postman</span>
+          <span class="stag">MySQL</span>
+          <span class="stag">PostgreSQL</span>
+          <span class="stag">MS Excel</span>
+          <span class="stag">MS Word</span>
+          <span class="stag">PowerPoint</span>
+          <span class="stag">Laravel</span>
+        </div>
+      </div>
+
+      <!-- Soft Skills — CARD STYLE (bukan progress bar) -->
+      <div class="skill-box soft reveal" data-delay="200">
+        <div class="skill-box-header">
+          <span class="skill-icon">🧠</span>
+          <span>Soft Skills</span>
+        </div>
+        <div class="soft-list">
+          <div class="soft-item">Leadership &amp; Coordination</div>
+          <div class="soft-item">Communication &amp; Public Speaking</div>
+          <div class="soft-item">Problem Solving</div>
+          <div class="soft-item">Adaptability</div>
+          <div class="soft-item">Responsibility</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <div class="section-label">
+        <span class="label-num">04</span>
+        Projects
+      </div>
+      <h2 class="section-title">Selected<br><em>Projects</em></h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- PROJECT 1 -->
+      <div class="pcard reveal" data-delay="0">
+        <div class="pcard-img">
+          <div class="photo-slider" id="slider-1">
+            <div class="photo-slide"><img src="assets/project1-1.jpeg" alt="buying and selling shoes"></div>
+            <div class="photo-slide"><img src="assets/project1-2.jpeg" alt=""></div>
+            <div class="photo-slide"><img src="assets/project1-3.jpeg" alt=""></div>
+          </div>
+          <div class="pcard-arrows">
+            <button onclick="slidePhoto('slider-1',-1)">←</button>
+            <button onclick="slidePhoto('slider-1',1)">→</button>
+          </div>
+          <div class="pcard-sem">Semester 1</div>
+        </div>
+        <div class="pcard-body">
+          <h3 class="pcard-title">Sport!4U - buying and selling shoes </h3>
+          <p class="pcard-desc">A web-based e-commerce application built with PHP and MySQL for online shoe sales. It offers product catalog, inventory management, user authentication, and transaction history features, with a responsive and user-friendly interface.</p>
+          <div class="pcard-tech">
+            <span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="pcard reveal" data-delay="100">
+        <div class="pcard-img">
+          <div class="photo-slider" id="slider-2">
+            <div class="photo-slide"><img src="assets/project2-1.jpeg" alt="Venus Cars"></div>
+            <div class="photo-slide"><img src="assets/project2-2.jpeg" alt=""></div>
+            <div class="photo-slide"><img src="assets/project2-3.jpeg" alt=""></div>
+            <div class="photo-slide"><img src="assets/project2-4.jpeg" alt=""></div>
+            <div class="photo-slide"><img src="assets/project2-5.jpeg" alt=""></div>
+            <div class="photo-slide"><img src="assets/project2-6.jpeg" alt=""></div>
+            <div class="photo-slide"><img src="assets/project2-7.jpeg" alt=""></div>
+          </div>
+          <div class="pcard-arrows">
+            <button onclick="slidePhoto('slider-2',-1)">←</button>
+            <button onclick="slidePhoto('slider-2',1)">→</button>
+          </div>
+          <div class="pcard-sem">Semester 2</div>
+        </div>
+        <div class="pcard-body">
+          <h3 class="pcard-title">Venus Cars</h3>
+          <p class="pcard-desc">A web-based car marketplace application built with Laravel and MySQL, featuring a vehicle catalog, transaction management, a customer dashboard, and a payment system. Built using the MVC architecture and featuring a responsive interface to enhance the user experience.</p>
+          <div class="pcard-tech">
+            <span>Laravel</span><span>Tailwind CSS</span><span>MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="pcard reveal" data-delay="200">
+        <div class="pcard-img">
+          <div class="photo-slider" id="slider-3">
+            <div class="photo-slide"><img src="assets/project3-1.jpeg" alt="SIIRD"></div>
+            <div class="photo-slide"><img src="assets/project3-2.jpeg" alt=""></div>
+            <div class="photo-slide"><img src="assets/project3-3.jpeg" alt=""></div>
+            <div class="photo-slide"><img src="assets/project3-4.jpeg" alt=""></div>
+            <div class="photo-slide"><img src="assets/project3-5.jpeg" alt=""></div>
+            <div class="photo-slide"><img src="assets/project3-6.jpeg" alt=""></div>
+            <div class="photo-slide"><img src="assets/project3-7.jpeg" alt=""></div>
+          </div>
+          <div class="pcard-arrows">
+            <button onclick="slidePhoto('slider-3',-1)">←</button>
+            <button onclick="slidePhoto('slider-3',1)">→</button>
+          </div>
+          <div class="pcard-sem">Semester 3</div>
+        </div>
+        <div class="pcard-body">
+          <h3 class="pcard-title">Sistem Informasi Riset Dan Inovasi Daerah</h3>
+          <p class="pcard-desc">A web platform built on Next.js, Express.js, and PostgreSQL used to publish research findings, innovations, and Appropriate Technology (AT) in the Riau Islands. The system supports innovation data management, monitoring dashboards, and connectivity between regional innovation needs and researchers, the public, industry, and the government.</p>
+          <div class="pcard-tech">
+            <span>Next.js</span><span>Express.js</span><span>PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ORGANISASI -->
+<section id="organisasi">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <div class="section-label">
+        <span class="label-num">05</span>
+        campus activities 
+      </div>
+      <h2 class="section-title">Organisasi &amp;<br><em>Dokumentasi</em></h2>
+    </div>
+
+    <div class="org-feature reveal">
+      <div class="org-feature-left">
+        <div class="org-period-tag">2025</div>
+          <h3 class="org-title">BEM Politeknik<br>Negeri Batam</h3>
+          <p class="org-desc">Actively participates in student organization activities, developing leadership, communication, and team coordination skills.</p>
+      </div>
+      <div class="org-feature-gallery">
+        <div class="gallery-main">
+          <img src="assets/org1-1.jpeg" alt="BEM Politeknik Negeri Batam">
+        </div>
+        <div class="gallery-thumbs">
+          <div class="gallery-thumb"><img src="assets/org1-2.jpeg" alt=""></div>
+          <div class="gallery-thumb"><img src="assets/org1-3.jpeg" alt=""></div>
+          <div class="gallery-thumb"><img src="assets/org1-4.jpeg" alt=""></div>
+          <div class="gallery-thumb"><img src="assets/org1-5.jpeg" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- KEGIATAN -->
+<section id="kegiatan">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">
+        <span class="label-num">06</span>
+        organizing committee 
+      </div>
+      <h2 class="section-title">Peran &amp;<br><em>Organizing Committee</em></h2>
+    </div>
+
+    <!-- KEGIATAN 1: RUDI -->
+    <div class="org-feature kegiatan-card reveal" data-delay="0">
+      <div class="org-feature-left">
+        <div class="kegiatan-number">01</div>
+        <div class="org-period-tag">2025</div>
+        <h3 class="org-title">Executive Chair<br><em>RUDI</em></h3>
+        <p class="org-desc">Led the organization of the Ruang Dialog (RUDI) event, an intercollegiate debate competition across Batam City. Was responsible for coordinating the organizing committee, managing technical aspects of the event, and ensuring the smooth execution of the entire series of activities from the preparation phase through to implementation.</p>
+        <div class="org-tags">
+          <span>Leadership</span>
+          <span>Team Coordination</span>
+          <span>Debate Competition</span>
+          <span>Inter-University</span>
+        </div>
+      </div>
+      <div class="org-feature-gallery">
+        <div class="gallery-main">
+          <img src="assets/rudi1.jpeg" alt="RUDI - Ruang Dialog">
+        </div>
+        <div class="gallery-thumbs">
+          <div class="gallery-thumb"><img src="assets/rudi2.jpeg" alt=""></div>
+          <div class="gallery-thumb"><img src="assets/rudi3.jpeg" alt=""></div>
+          <div class="gallery-thumb"><img src="assets/rudi4.jpeg" alt=""></div>
+          <div class="gallery-thumb"><img src="assets/rudi5.jpeg" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIVIDER -->
+    <div class="kegiatan-divider reveal">
+      <span></span><div class="divider-icon">✦</div><span></span>
+    </div>
+
+    <!-- KEGIATAN 2: MASA X TAMAK -->
+    <div class="org-feature org-feature-reverse kegiatan-card reveal" data-delay="100">
+      <div class="org-feature-left">
+        <div class="kegiatan-number">02</div>
+        <div class="org-period-tag">2025</div>
+        <h3 class="org-title">Moderator<br><em>MASA X TAMAK</em></h3>
+        <p class="org-desc">Served as moderator for the MASA X TAMAK event attended by representatives from the Police, Transportation Office (Dishub), and PT Jasa Raharja. Guided the discussion professionally, structurally, and constructively alongside speakers from various institutions.</p>
+        <div class="org-tags">
+          <span>Moderator</span>
+          <span>Public Speaking</span>
+          <span>Police</span>
+          <span>Dishub</span>
+          <span>Jasa Raharja</span>
+        </div>
+      </div>
+      <div class="org-feature-gallery">
+        <div class="gallery-main">
+          <img src="assets/org1-3.jpeg" alt="MASA X TAMAK">
+        </div>
+        <div class="gallery-thumbs">
+          <div class="gallery-thumb"><img src="assets/tamak2.jpeg" alt=""></div>
+          <div class="gallery-thumb"><img src="assets/tamak3.jpeg" alt=""></div>
+          <div class="gallery-thumb"><img src="assets/tamak4.jpeg" alt=""></div>
+          <div class="gallery-thumb"><img src="assets/tamak5.jpeg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERTIFIKAT -->
+<section id="sertifikat">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">
+        <span class="label-num">07</span>
+        Achievement
+      </div>
+      <h2 class="section-title">Certificates &amp;<br><em>Awards</em></h2>
+    </div>
+
+    <div class="cert-grid">
+
+      <div class="cert-card reveal" data-delay="0">
+        <div class="cert-img-wrap" onclick="openLightbox('assets/sertifikat bem.jpeg', 'Sertifikat BEM')">
+          <img src="assets/sertifikat bem.jpeg" alt="Sertifikat BEM">
+          <div class="cert-overlay">
+            <div class="cert-zoom-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+              </svg>
+            </div>
+            <span>Click to enlarge</span>
+          </div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-badge">Organization</div>
+          <h3 class="cert-title">BEM Certificate - Politeknik Negeri Batam</h3>
+          <p class="cert-desc">Recognition for active participation as a member of the Student Executive Body (BEM) in supporting organizational activities and developing student leadership.</p>
+        </div>
+      </div>
+
+      <div class="cert-card reveal" data-delay="120">
+        <div class="cert-img-wrap" onclick="openLightbox('assets/sertifikat pengabdian.jpeg', 'Sertifikat Pengabdian')">
+          <img src="assets/sertifikat pengabdian.jpeg" alt="Sertifikat Pengabdian">
+          <div class="cert-overlay">
+            <div class="cert-zoom-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+              </svg>
+            </div>
+            <span>Click to enlarge</span>
+          </div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-badge">Community Service</div>
+          <h3 class="cert-title">Community Service Certificate</h3>
+          <p class="cert-desc">Recognition for active contribution and participation in community service activities in Sembulang, organized by the student organization of Politeknik Negeri Batam.</p>
+        </div>
+      </div>
+
+      <div class="cert-card reveal" data-delay="240">
+        <div class="cert-img-wrap" onclick="openLightbox('assets/sertifikat inau.jpeg', 'Sertifikat Inaugurasi')">
+          <img src="assets/sertifikat inau.jpeg" alt="Sertifikat Inaugurasi">
+          <div class="cert-overlay">
+            <div class="cert-zoom-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+              </svg>
+            </div>
+            <span>Click to enlarge</span>
+          </div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-badge">Event</div>
+          <h3 class="cert-title">Inauguration Certificate - Politeknik Negeri Batam</h3>
+          <p class="cert-desc">Award certificate for involvement and contribution in the implementation of the inauguration event at Politeknik Negeri Batam.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- FOOTER -->
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-left">
+      <div class="footer-name">Fitri Nabila Aprianti</div>
+      <div class="footer-title">D3 Teknik Informatika · Politeknik Negeri Batam</div>
+    </div>
+    <div class="footer-right">
+      <a href="mailto:fitrinabilaaprianti2006@gmail.com" class="footer-email">fitrinabilaaprianti2006@gmail.com</a>
+      <div class="footer-social">
+        <a href="https://github.com/ftrnaa" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/fitri-nabila-8829953aa" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/fttrnaaaa?igsh=MWE5d2FxbnplbHNoeA==" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Fitri Nabila Aprianti</span>
+    <span>Dibuat dengan ❤️</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
