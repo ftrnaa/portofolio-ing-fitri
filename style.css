@@ -1161,3 +1161,15 @@ footer {
   .pcard-arrows { opacity: 1; }
   .pcard-arrows button { background: rgba(255,255,255,0.85); }
 }
+.gallery-main--portrait {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-main--portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
