@@ -1173,3 +1173,39 @@ footer {
   object-fit: cover;
   object-position: top;
 }
+/* Override cert-grid jadi 2 kolom */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Pastikan klik bisa masuk ke wrapper */
+.cert-img-wrap {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.cert-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* ← INI PENTING, biar klik tembus ke wrapper */
+}
+
+.cert-img-wrap:hover .cert-overlay {
+  opacity: 1;
+}

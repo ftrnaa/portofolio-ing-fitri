@@ -173,3 +173,38 @@ lightboxBd.addEventListener('click', closeLightbox);
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
 });
+// LIGHTBOX
+function openLightbox(src, title) {
+  // Buat overlay jika belum ada
+  let lb = document.getElementById('lightbox');
+  if (!lb) {
+    lb = document.createElement('div');
+    lb.id = 'lightbox';
+    lb.style.cssText = `
+      position:fixed; inset:0; background:rgba(0,0,0,0.85);
+      display:flex; align-items:center; justify-content:center;
+      z-index:9999; cursor:zoom-out; padding:1rem;
+    `;
+    lb.innerHTML = `
+      <div style="position:relative; max-width:90vw; max-height:90vh;">
+        <img id="lb-img" style="max-width:100%; max-height:85vh; border-radius:8px; display:block;">
+        <div id="lb-title" style="color:#fff; text-align:center; margin-top:0.75rem; font-size:0.9rem; opacity:0.8;"></div>
+        <button onclick="document.getElementById('lightbox').remove()" style="
+          position:absolute; top:-14px; right:-14px;
+          background:#fff; border:none; border-radius:50%;
+          width:32px; height:32px; font-size:18px; cursor:pointer;
+          display:flex; align-items:center; justify-content:center;
+          box-shadow:0 2px 8px rgba(0,0,0,0.3);
+        ">×</button>
+      </div>
+    `;
+    lb.addEventListener('click', function(e) {
+      if (e.target === lb) lb.remove();
+    });
+    document.body.appendChild(lb);
+  }
+
+  document.getElementById('lb-img').src = src;
+  document.getElementById('lb-title').textContent = title || '';
+  lb.style.display = 'flex';
+}
